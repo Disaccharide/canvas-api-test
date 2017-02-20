@@ -5,7 +5,6 @@ window.onload = function () {
     var text01 = new TestField();
     text01.setText("anvas-api-test");
     text01.setX(30);
-    text01.setY(130);
     text01.setSize(75);
     text01.alpha = 0.75;
     text01.rotation = 45;
@@ -16,7 +15,9 @@ window.onload = function () {
     stage.addChild(image01);
     stage.alpha = 0.75;
     setInterval(function () {
+        context2D.setTransform(1, 0, 0, 1, 0, 0);
         context2D.clearRect(0, 0, canvas.width, canvas.height);
+        text01.y++;
         stage.draw(context2D);
     }, 100);
 };

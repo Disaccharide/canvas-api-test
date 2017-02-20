@@ -12,7 +12,6 @@ var DisplayObject = (function () {
         this.x = 0;
         this.y = 0;
         this.rotation = 0;
-        // hasBeenCalculated = false;
         this.matrix = new math.Matrix();
         this.globalMatrix = new math.Matrix();
     }
@@ -57,9 +56,9 @@ var TestField = (function (_super) {
         _super.call(this);
         this.text = "";
         this.textColor = "#000000";
-        this.size = 18;
+        this.size = 20;
         this.typeFace = "Arial";
-        this.textType = "18px Arial";
+        this.textType = "20px Arial";
     }
     TestField.prototype.render = function (context2D) {
         context2D.fillStyle = this.textColor;

@@ -11,7 +11,6 @@ class DisplayObject implements Drawable{
     x = 0;
     y = 0;
     rotation = 0;
-    // hasBeenCalculated = false;
     matrix = new math.Matrix();
     globalMatrix = new math.Matrix();
 
@@ -51,9 +50,9 @@ class TestField extends DisplayObject{
 
     text = "";
     textColor = "#000000";
-    size = 18;
+    size = 20;
     typeFace = "Arial";
-    textType = "18px Arial";
+    textType = "20px Arial";
 
     constructor(){
         super();
