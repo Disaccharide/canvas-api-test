@@ -8,7 +8,7 @@ window.onload = () => {
     text01.setX(30);
     text01.setSize(75);
     text01.alpha = 0.75;
-    text01.rotation = 45;
+    text01.rotation = 30;
     stage.addChild(text01);
 
     var image01 = new Bitmap();
